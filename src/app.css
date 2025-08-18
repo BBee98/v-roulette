@@ -1,0 +1,29 @@
+.canvas {
+    margin-top: 98px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.circle {
+
+    grid-column: 4;
+
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.form {
+    grid-column: 8/11
+}
+
+.text {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
