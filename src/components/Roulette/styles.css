@@ -1,0 +1,40 @@
+.circle {
+    grid-column: 4;
+
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+    background-color: aqua;
+
+    overflow: hidden;
+}
+
+.cheese {
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+.cheese:nth-child(1) {
+    background-color: pink;
+}
+
+.cheese:nth-child(1)::before {
+    content: '';
+    background-color: green;
+    position: absolute;
+    transform-origin: bottom right;
+
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+.cheese:nth-child(2) {
+    background-color: blue;
+}
+
